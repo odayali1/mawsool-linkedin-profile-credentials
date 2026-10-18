@@ -1,0 +1,116 @@
+{
+  "actorSpecification": 1,
+  "title": "LinkedIn Certifications and Patents",
+  "description": "One result row. A URL is charged once even when it produces several rows.",
+  "fields": {
+    "type": "object",
+    "properties": {
+      "inputUrl": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "inputUrl"
+      },
+      "fullName": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "fullName"
+      },
+      "kind": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "kind"
+      },
+      "title": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "title"
+      },
+      "subtitle": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "subtitle"
+      },
+      "detail": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "detail"
+      },
+      "date": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "date"
+      },
+      "url": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "url"
+      },
+      "certificationCount": {
+        "type": [
+          "integer",
+          "null"
+        ],
+        "title": "certificationCount"
+      },
+      "patentCount": {
+        "type": [
+          "integer",
+          "null"
+        ],
+        "title": "patentCount"
+      },
+      "courseCount": {
+        "type": [
+          "integer",
+          "null"
+        ],
+        "title": "courseCount"
+      },
+      "success": {
+        "type": "boolean",
+        "title": "success"
+      }
+    }
+  },
+  "views": {
+    "flat": {
+      "title": "Flat results",
+      "transformation": {
+        "fields": [
+          "inputUrl",
+          "fullName",
+          "kind",
+          "title",
+          "subtitle",
+          "detail",
+          "date",
+          "url",
+          "certificationCount",
+          "patentCount",
+          "courseCount",
+          "success"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {}
+      }
+    }
+  }
+}

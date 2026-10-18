@@ -1,0 +1,40 @@
+{
+  "$schema": "https://apify.com/schemas/v1/actor.ide.json",
+  "actorSpecification": 1,
+  "name": "mawsool-linkedin-profile-credentials",
+  "title": "LinkedIn Certifications, Patents and Courses",
+  "description": "Get LinkedIn certifications, patents, courses, publications, and organizations from profile URLs you already have. One charge per profile, Starting from $0.45 per 1,000, even when several credentials come back on the same person. No LinkedIn login and no cookies.",
+  "seoTitle": "LinkedIn Certifications and Patents by URL",
+  "seoDescription": "Pull LinkedIn certifications, patents, courses, publications, and organizations from a profile URL. One charge per profile, Starting from $0.45 per 1,000.",
+  "categories": [
+    "LEAD_GENERATION",
+    "SOCIAL_MEDIA",
+    "AUTOMATION"
+  ],
+  "version": "1.0",
+  "buildTag": "latest",
+  "minMemoryMbytes": 256,
+  "maxMemoryMbytes": 1024,
+  "defaultRunOptions": {
+    "build": "latest",
+    "timeoutSecs": 21600,
+    "memoryMbytes": 256
+  },
+  "environmentVariables": {
+    "ACTOR_SLICE": "credentials",
+    "CHARGE_EVENT": "profile-credentials",
+    "GUEST_API_BASE_URL": "https://guest.mawsool.tech",
+    "GUEST_API_KEY": "@mawsoolGuestApiKey"
+  },
+  "meta": {
+    "templateId": "ts-empty",
+    "generatedBy": "Cursor Agent"
+  },
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "pricing": "./pay_per_event.json",
+  "dockerfile": "../Dockerfile"
+}
